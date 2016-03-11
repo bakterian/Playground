@@ -1,0 +1,27 @@
+1. Create a account on Github.com
+
+2. Install git on your machine:
+   sudo apt-get install git
+
+3. setup the git globals using your github credentials
+   git config --global user.name "bakterian"
+   got config --global user.email "marcinkarczewski86@gmail.com"
+
+   Verify proper git config with the command:
+   git config --list
+
+4. Create a repository on Github.com
+
+5. Init the Folder on your linux machine
+   If the folder contains data do the following:
+   
+   cd <localdir>
+   git init
+   git add .
+   git commit -m 'message'
+   git remote add origin <url to created repository>
+   git push -u origin master
+
+   If the folder is empty skip the "git add" and "git commit"
+
+6. That's it
